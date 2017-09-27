@@ -16,6 +16,20 @@ production:
   database: kadai-tasklist_production
   username: kadai-tasklist
   password: <%= ENV['MESSAGE-BOARD_DATABASE_PASSWORD'] %>
+  
+development:
+  <<: *default
+  database: kadai-tasklist_development
+
+test:
+  <<: *default
+  database: kadai-tasklist_test
+
+production:
+  <<: *default
+  database: kadai-tasklist_production
+  username: kadai-tasklist
+  password: <%= ENV['KADAI-TASKLIST_DATABASE_PASSWORD'] %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
