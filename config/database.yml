@@ -17,16 +17,9 @@ production:
   username: kadai-tasklist
   password: <%= ENV['MESSAGE-BOARD_DATABASE_PASSWORD'] %>
 
-development:
-  <<: *default
-  database: kadai-tasklist_development
-
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
-test:
-  <<: *default
-  database: kadai-tasklist_test
+# Do not set this db to the same as development or production.ist_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -47,8 +40,3 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: kadai-tasklist_production
-  username: kadai-tasklist
-  password: <%= ENV['KADAI-TASKLIST_DATABASE_PASSWORD'] %>
