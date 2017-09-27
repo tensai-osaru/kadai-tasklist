@@ -18,8 +18,23 @@
     <%= render 'layouts/navbar' %>
     
     <div class="container">
+      <div class="row">
       <%= render 'layouts/flash_tasks' %>
+      </div>
       
+      <div class="row">
+        <div class= "col-xs-12"></div>
+      </div>
+        
+      <div class="row"> 
+        <div class="col-sm-4"></div>
+        <div class="col-sm-offset-2 col-sm-4"></div>
+      </div>
+        
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-offset-3 col-lg-3"></div>
+      </div>
       <%= yield %>
     </div>
   </body>
