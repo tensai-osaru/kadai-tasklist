@@ -13,22 +13,22 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  database: kadai-tasklist_production
-  username: kadai-tasklist
+  database: osaru-tasklist_production
+  username: osaru-tasklist
   password: <%= ENV['MESSAGE-BOARD_DATABASE_PASSWORD'] %>
   
 development:
-  <<: *default
-  database: kadai-tasklist_development
+  adapter: postgresql
+  database: osaru-tasklist_development
 
 test:
-  <<: *default
-  database: kadai-tasklist_test
+  adapter: postgresql
+  database: osaru-tasklist_test
 
 production:
-  <<: *default
-  database: kadai-tasklist_production
-  username: kadai-tasklist
+  adapter: postgresql
+  database: osaru-tasklist_production
+  username: osaru-tasklist
   password: <%= ENV['KADAI-TASKLIST_DATABASE_PASSWORD'] %>
 
 # Warning: The database defined as "test" will be erased and
