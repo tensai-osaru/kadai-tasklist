@@ -27,7 +27,7 @@ test:
   database:  kadai-tasklist_test
 
 production:
-  adapter: postgresql
+  adapter:  postgresql
   database: osaru-tasklist_production
   username: osaru-tasklist
   password: <%= ENV['KADAI-TASKLIST_DATABASE_PASSWORD'] %>
