@@ -20,16 +20,16 @@ default: &default
 
 development:
   <<: *default
-  database: tasklist_development
+  database: kadai-tasklist_development
 
 test:
   <<: *default
-  database: tasklist_test
+  database: kadai-tasklist_test
 
 production:
   adapter:  postgresql
-  database: tasklist_production
-  username: -tasklist
+  database: kadai-tasklist_production
+  username: kadai-tasklist
   password: <%= ENV['KADAI-TASKLIST_DATABASE_PASSWORD'] %>
 
 # Warning: The database defined as "test" will be erased and
