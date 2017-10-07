@@ -29,6 +29,7 @@ test:
 production:
   adapter:  postgresql
   database: kadai-tasklist_production
+  pool: 5
   username: kadai-tasklist
   password: <%= ENV['KADAI-TASKLIST_DATABASE_PASSWORD'] %>
 
