@@ -28,9 +28,9 @@ test:
 
 production:
   adapter:  postgresql
-  database: kadai-tasklist_production
+  database: osaru-tasklist_production
   pool: 5
-  username: kadai-tasklist
+  username: osaru-tasklist
   password: <%= ENV['KADAI-TASKLIST_DATABASE_PASSWORD'] %>
 
 # Warning: The database defined as "test" will be erased and
