@@ -6,8 +6,9 @@ class TasksController < ApplicationController
     @tasks = current_user.tasks.order(created_at: :desc).page(params[:page]).per(3)
   end
 
+  
   def show
-
+    set_task
   end
 
   def new
@@ -27,6 +28,7 @@ class TasksController < ApplicationController
   end
   
   def edit
+    set_task
   end
 
   def update
@@ -58,7 +60,7 @@ class TasksController < ApplicationController
   end
   
   def task_params
-    params.require(:task).permit(:content, :status)
+    params.require(:task).permit(:content, :status, :user_id)
   end
   
   def correct_user
